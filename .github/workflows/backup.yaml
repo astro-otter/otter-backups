@@ -19,7 +19,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        
+
+      - name: Install OTTER API
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install astro-otter
+
       - name: Run backup
         run: |
           ./run-backup.sh \
