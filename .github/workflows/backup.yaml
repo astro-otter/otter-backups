@@ -1,0 +1,39 @@
+name: backup
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Runs every tuesday at 4AM UTC (12AM EST, 10PM MST of the previous day) 
+  schedule:
+    - cron: '0 4 * * 2' 
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        
+      - name: Run backup
+        run: |
+          ./run-backup.sh \
+          --arango-url ${{ secrets.OTTER_URL }} \
+          --password ${{ secrets.OTTER_USER_PASSWORD }}
+
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -a -m "Add new backup"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
