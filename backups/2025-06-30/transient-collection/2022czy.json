@@ -1,0 +1,173 @@
+{
+    "_key": "885049",
+    "_id": "transients/885049",
+    "_rev": "_jt3l7Oi---",
+    "coordinate": [
+        {
+            "ra": "185.504708",
+            "dec": "16.995561",
+            "ra_units": "deg",
+            "dec_units": "deg",
+            "coordinate_type": "equatorial",
+            "epoch": "J2000",
+            "frame": "ICRS",
+            "reference": [
+                "2022TNSTR.489....1T"
+            ],
+            "default": true
+        },
+        {
+            "ra": "185.504708",
+            "dec": "16.995561",
+            "ra_units": "deg",
+            "dec_units": "deg",
+            "coordinate_type": "equatorial",
+            "reference": [
+                "2022TNSTR.489....1T"
+            ],
+            "default": false
+        }
+    ],
+    "classification": {
+        "value": [
+            {
+                "object_class": "TDE",
+                "confidence": 3.3,
+                "reference": [
+                    "2022TNSCR.584....1F",
+                    "2022TNSCR.601....1H",
+                    "2022TNSCR1188....1B",
+                    "2024ApJ...974..241A"
+                ],
+                "default": true
+            }
+        ],
+        "spec_classed": 3,
+        "unambiguous": true
+    },
+    "name": {
+        "default_name": "2022czy",
+        "alias": [
+            {
+                "value": "ATLAS22gtw",
+                "reference": [
+                    "TNS"
+                ]
+            },
+            {
+                "value": "Gaia22cay",
+                "reference": [
+                    "TNS"
+                ]
+            },
+            {
+                "value": "2022czy",
+                "reference": [
+                    "TNS"
+                ]
+            },
+            {
+                "value": "PS22bvf",
+                "reference": [
+                    "TNS"
+                ]
+            },
+            {
+                "value": "AT2022czy",
+                "reference": [
+                    "2022TNSTR.489....1T"
+                ]
+            }
+        ]
+    },
+    "reference_alias": [
+        {
+            "name": "2022TNSTR.489....1T",
+            "human_readable_name": "Tonry, J. et al. (2022)"
+        },
+        {
+            "name": "2024ApJ...974..241A",
+            "human_readable_name": "Anumarlapudi, Akash et al. (2024)"
+        },
+        {
+            "name": "2022TNSCR.584....1F",
+            "human_readable_name": "Fulton, M. et al. (2022)"
+        },
+        {
+            "name": "2022TNSCR.601....1H",
+            "human_readable_name": "Hinkle, J. (2022)"
+        },
+        {
+            "name": "2022TNSCR1188....1B",
+            "human_readable_name": "Blanchard, P. K. et al. (2022)"
+        }
+    ],
+    "photometry": [
+        {
+            "reference": "2024ApJ...974..241A",
+            "raw": [
+                0.9,
+                0.7
+            ],
+            "raw_err": [
+                0,
+                0
+            ],
+            "raw_units": "mJy",
+            "date": [
+                "58789.49872",
+                "59671.49872"
+            ],
+            "date_format": [
+                "mjd",
+                "mjd"
+            ],
+            "upperlimit": [
+                true,
+                true
+            ],
+            "filter_key": [
+                "887.5MHz",
+                "887.5MHz"
+            ],
+            "obs_type": "radio",
+            "telescope": "RACS",
+            "corr_k": false,
+            "corr_s": false,
+            "corr_host": false,
+            "corr_av": false,
+            "corr_hostav": false
+        }
+    ],
+    "filter_alias": [
+        {
+            "filter_key": "887.5MHz",
+            "filter_name": "UHF",
+            "freq_eff": 887.5,
+            "freq_units": "MHz"
+        }
+    ],
+    "distance": [
+        {
+            "value": 0.109,
+            "computed": false,
+            "distance_type": "redshift",
+            "reference": [
+                "2022TNSCR.584....1F",
+                "2022TNSCR.601....1H",
+                "2022TNSCR1188....1B"
+            ]
+        }
+    ],
+    "date_reference": [
+        {
+            "value": 59632.49872,
+            "date_format": "mjd",
+            "date_type": "discovery",
+            "reference": [
+                "2022TNSTR.489....1T"
+            ],
+            "computed": false
+        }
+    ]
+}

@@ -49,7 +49,7 @@ if [ -z ${USERNAME_+x} ]; then
 fi
 
 # first get all the data and write it to the backups outpath
-python3 backup.py \
+python3 $(dirname $0)/backup.py \
 	--arango-url $ARANGO_URL \
 	--outpath $OUTPATH \
 	--password $PASSWORD \
